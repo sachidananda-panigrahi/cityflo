@@ -839,3 +839,10 @@ a.btn{
     background-color: #000;
     border-color: rgba(255, 255, 255, 0.3);
 }
+
+/*Sachidananda*/
+.error, .reauth-email{
+    display: block;
+    color: red;
+    text-align: left;
+}

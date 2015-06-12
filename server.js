@@ -11,7 +11,6 @@ var passport = require('passport');
 var app = express();
 var flash = require('connect-flash');
 var server = require('http').createServer(app);
-var Grid = require('gridfs-stream');
 
 // MongoDB
 var connection = mongoose.connect('mongodb://localhost/cityflo_db');
@@ -58,15 +57,11 @@ app.post('/login_method', router.loginMethod);
 // Student page
 app.get('/signup', router.studentSignup);
 // Student page
-app.get('/dashboard', loggedIn, router.adminDashboard);
-//User Profile
-app.get('/profile', loggedIn, router.userprofile);
-// get users
-app.get('/api/userlist', router.user);
+app.get('/dashboard', loggedIn, router.userDashboard);
 // check user exist
 app.post('/api/userpresent',router.userpresent);
 //Add Users
-app.post('/api/addUser',router.addNewUser);
+app.post('/addUser',router.addNewUser);
 
 
 // Configuring PORT

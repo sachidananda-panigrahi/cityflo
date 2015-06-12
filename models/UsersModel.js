@@ -4,7 +4,6 @@ var CONSTANT = require('../utilities/Constant').CONSTANTS;
 
 // Model Definition
 var userSchema = new mongoose.Schema({
-    id_: {type: String},
     name: {type: String},
     email: {type: String},
     mobile: {type: Number},
