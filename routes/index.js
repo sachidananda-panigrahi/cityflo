@@ -59,7 +59,7 @@ module.exports.addNewUser = function(req, res){
 
     userController.addUser(createUser).done(function (user) {
         if(user){
-            console.log(user);
+//            console.log(user);
             res.redirect('/');
         }
     });

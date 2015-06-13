@@ -4,7 +4,7 @@ var CONSTANT = require('../utilities/Constant').CONSTANTS;
 
 // Model Definition
 var routeSchema = new mongoose.Schema({
-    stations: {name: {type: String}, latitude: {type: Number}, longitude: {type: Number}}
+    stations: {type: Array}
 });
 
 // Export module.

@@ -642,7 +642,7 @@ h1 {
   margin: 0 0 40px;
 }
 
-label {
+#signinup label {
   position: absolute;
   -webkit-transform: translateY(6px);
       -ms-transform: translateY(6px);
@@ -658,27 +658,27 @@ label {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
   top: 5px;
 }
-label .req {
+#signinup label .req {
   margin: 2px;
   color: #1ab188;
 }
 
-label.active {
+#signinup label.active {
   -webkit-transform: translateY(50px);
       -ms-transform: translateY(50px);
           transform: translateY(50px);
   left: 2px;
   font-size: 14px;
 }
-label.active .req {
+#signinup label.active .req {
   opacity: 0;
 }
 
-label.highlight {
+#signinup label.highlight {
   color: #ffffff;
 }
 
-input, textarea {
+#signinup input, textarea {
   font-size: 22px;
   display: block;
   width: 100%;
@@ -692,12 +692,12 @@ input, textarea {
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
           transition: border-color .25s ease, box-shadow .25s ease;
 }
-input:focus, textarea:focus {
+#signinup input:focus, textarea:focus {
   outline: 0;
   border-color: #1ab188;
 }
 
-textarea {
+#signinup textarea {
   border: 2px solid #a0b3b0;
   resize: vertical;
 }
@@ -835,14 +835,126 @@ a.btn{
 	outline:none;
 }
 
-.inner-page .navbar-default {
-    background-color: #000;
-    border-color: rgba(255, 255, 255, 0.3);
+
+/**************************INNER PAGES CSS*************************************/
+
+
+.mainbody h1{
+	color:#000;
 }
 
+.to {
+    left: 283px;
+    margin-top: 8px;
+    position: absolute;
+}
+
+.booking label {
+    font-size: 14px;
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.booking input{
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	border-radius:0px;
+}
+
+.booking select{
+	border-radius:0px;
+}
+
+.booking-warp {
+    padding: 0 40px;
+}
+
+
+.routemap {
+    margin-top: 80px;
+}
+
+.popin {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 2px;
+    box-shadow:0 0 2px #999;
+    padding: 15px;
+}
+.popin img {
+    width: 100%;
+}
+
+
+.inner-header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/innerpage-header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.inner-header .header-content {
+    position: relative;
+    width: 100%;
+    padding:0px 15px;
+    text-align: center;
+}
+
+.inner-header .header-content .header-content-inner h1 {
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.inner-header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+.inner-header .header-content .header-content-inner p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.9);
+}
+
+#mainNav .btn-group {
+    margin-bottom: 0;
+}
+
+#mainNav .dropdown-toggle {
+    border: 0 none;
+    border-radius: 0;
+    padding: 12px 10px;
+}
+
+#mainNav .dropdown-toggle img {
+    border-radius: 50px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 26px;
+}
+
+#mainNav .dropdown-menu{
+	border-radius: 0;
+	margin: -1px;
+}
+
+
 /*Sachidananda*/
-.error, .reauth-email{
+
+.has-error{
     display: block;
-    color: red;
-    text-align: left;
+    /*text-align: center;*/
+    color: #a94442;
+
+}
+.has-success{
+    display: block;
+    /*text-align: center;*/
+    color: #3c763d;
 }

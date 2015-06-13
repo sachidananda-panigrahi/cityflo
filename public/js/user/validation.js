@@ -1,9 +1,10 @@
 $(document).ready(function(){
-    console.log('user validation called');
+//    console.log('user validation called');
+
     $('#loginForm').validate({
         errorElement: 'span',
-        errorClass: 'error',
-        validClass: "success",
+        errorClass: 'has-error',
+        validClass: "has-success",
         rules: {
             email: {
                 required: true,
@@ -28,8 +29,8 @@ $(document).ready(function(){
 
     $('#signupForm').validate({
         errorElement: 'span',
-        errorClass: 'error',
-        validClass: "success",
+        errorClass: 'has-error',
+        validClass: "has-success",
         rules: {
             email: {
                 required: true,
