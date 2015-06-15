@@ -1,6 +1,4 @@
-$(document).ready(function(){
-//    console.log('user validation called');
-
+function validation(){
     $('#loginForm').validate({
         errorElement: 'span',
         errorClass: 'has-error',
@@ -70,5 +68,7 @@ $(document).ready(function(){
             }
         }
     });
+}
 
-})
+
+

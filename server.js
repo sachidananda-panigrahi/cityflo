@@ -54,10 +54,10 @@ app.get( '/', router.login);
 app.get('/logout', router.logout);
 //validate login
 app.post('/login_method', router.loginMethod);
-// Student page
-app.get('/signup', router.studentSignup);
-// Student page
+//User Dashboard
 app.get('/dashboard', loggedIn, router.userDashboard);
+//User Profile
+app.get('/profile', loggedIn, router.profile);
 // check user exist
 app.post('/api/userpresent',router.userpresent);
 //Add Users

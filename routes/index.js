@@ -26,6 +26,12 @@ module.exports.userDashboard = function(req, res){
     res.render('userDashboard', locals);
 };
 /*=======================Dash Board Ends==================================*/
+/*=======================Profile Starts==================================*/
+module.exports.profile = function(req, res){
+    locals.userDetail = req.user;
+    res.render('profile', locals);
+};
+/*=======================Profile Starts==================================*/
 module.exports.studentSignup = function(req, res){
     locals.months = CONSTANT.MONTHS;
     res.render('index', locals);
