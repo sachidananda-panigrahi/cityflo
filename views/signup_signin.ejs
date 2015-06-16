@@ -30,6 +30,11 @@
                                 </script>
                                 <span id="reauth-email" class="reauth-email"> The email or password you entered is incorrect. </span>
                                 <%}%>
+
+                                <div class="selectRoute hide">
+                                    <input class="from" type="text" name="city_from" id="from"/>
+                                    <input class="to" type="text" name="city_to" id="to"/>
+                                </div>
                                 <div class="field-wrap">
                                     <label>
                                         Email <span class="req">*</span>
@@ -57,7 +62,10 @@
                             <h1>Sign Up for Free</h1>
 
                             <form id="signupForm" action='/addUser' method='post' novalidate="">
-
+                                <div class="selectRoute hide">
+                                    <input class="from" type="text" name="city_from" id="from"/>
+                                    <input class="to" type="text" name="city_to" id="to"/>
+                                </div>
                                 <div class="field-wrap">
                                     <label>
                                         Phone No.<span class="req">*</span>
